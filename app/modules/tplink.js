@@ -107,7 +107,7 @@ class TPLink extends LovaClass {
 		this._connected = false;
 		let credentials = await this.getCredentials();
 		if (!credentials || !credentials.username || !credentials.password) {
-			throw new Error("TPLink Cloud username and/or password are not defined. Use `tplink auth` to set them");
+			throw new Error("TPLink Cloud username and/or password are not defined. Run `ethtplink tplink auth` to set them");
 		}
 
 		try {

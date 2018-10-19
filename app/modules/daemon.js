@@ -18,7 +18,7 @@ class Daemon extends LovaClass {
 	}
 
 	async start() {
-		var child = forever.startDaemon('index.js', {
+		var child = forever.startDaemon( path.join(__dirname, "../../index.js") , {
 			uid: this.uid,
 			max: undefined,
 			silent: false,

@@ -245,7 +245,7 @@ module.exports = function(sequelize, DataTypes) {
 	model.getWorkersFromPool = async function() {
 		let ethermineAddress = await sequelize.db.Option.getEthermineMinerAddress();
 		if (!ethermineAddress) {
-			throw new Error('Ethermine address is not defined. Use `ethermine auth` to set it');
+			throw new Error('Ethermine address is not defined. Run `ethtplink ethermine auth` to set it');
 		}
 		let result = await axios.get("https://api.ethermine.org/miner/"+ethermineAddress+"/dashboard");
 
