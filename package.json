@@ -1,0 +1,28 @@
+{
+  "name": "ethtplink",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js start",
+    "stop": "node index.js stop",
+    "status": "node index.js status",
+    "postinstall": "node ./postinstall.js"
+  },
+  "bin": "./index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cli-spinner": "^0.2.8",
+    "cli-table2": "^0.2.0",
+    "forever": "^0.15.3",
+    "lovacli": "^0.1.5",
+    "prompt": "^1.0.0",
+    "prompt-async": "^0.9.9",
+    "sequelize": "^4.38.1",
+    "sqlite3": "^4.0.2",
+    "tplink-cloud-api": "^0.3.5"
+  }
+}
