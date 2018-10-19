@@ -1,7 +1,11 @@
 {
   "name": "ethtplink",
-  "version": "0.0.4",
-  "description": "",
+  "version": "0.0.6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeka-kiselyov/dimeshift.git"
+  },
+  "description": "node.js daemon to reboot mining rigs using TP-Link HS100/HS110 sockets in case of issues mining on ethermine.org",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,8 +15,20 @@
     "postinstall": "node ./postinstall.js"
   },
   "bin": "./index.js",
-  "author": "",
+  "author": "Jeka Kiselyov <jeka911@gmail.com> (https://github.com/jeka-kiselyov)",
   "license": "MIT",
+  "keywords": [
+    "tplink",
+    "kasa",
+    "ethereum",
+    "mining",
+    "iot",
+    "cli",
+    "ethermine",
+    "hs100",
+    "hs110",
+    "smartplug"
+  ],
   "dependencies": {
     "axios": "^0.18.0",
     "cli-spinner": "^0.2.8",
