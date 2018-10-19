@@ -1,9 +1,9 @@
 {
   "name": "ethtplink",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeka-kiselyov/dimeshift.git"
+    "url": "https://github.com/jeka-kiselyov/ethtplink.git"
   },
   "description": "node.js daemon to reboot mining rigs using TP-Link HS100/HS110 sockets in case of issues mining on ethermine.org",
   "main": "index.js",
