@@ -17,7 +17,7 @@ Check this: https://docs.npmjs.com/getting-started/fixing-npm-permissions
 
 #### ethtplink status
 
-Display information about daemon status and list of rigs defined.
+Display information about daemon status and list of rigs defined. Start with this command, it will show you some hints if there're no settings set.
 
 ```
 info: EtherTPLink service is currently running
