@@ -3,6 +3,8 @@ node.js daemon to reboot mining rigs using TP-Link HS100/HS110 sockets in case o
 
 Reboots rigs (switching off and then on TPLink smart socket) if rig was not active in last 20 minutes.
 
+Has been tested on Ubuntu 18.04 and 18.10
+
 ### Installation
 
 ```bash
