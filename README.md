@@ -1,7 +1,7 @@
 # ethtplink
 node.js daemon to reboot mining rigs using TP-Link HS100/HS110 sockets in case of issues mining on ethermine.org
 
-Reboots rigs (switching off and then on TPLink smart sockets) if rig was not active in last 20 minutes.
+Reboots rigs (switching off and then on TPLink smart socket) if rig was not active in last 20 minutes.
 
 ### Installation
 
@@ -19,6 +19,7 @@ Check this: https://docs.npmjs.com/getting-started/fixing-npm-permissions
 
 Display information about daemon status and list of rigs defined.
 
+```
 info: EtherTPLink service is currently running
 info: Ethermine sync: Done.
 info: TPLink Cloud sync: Done.
@@ -29,6 +30,7 @@ info: TPLink Cloud sync: Done.
 ├────┼──────┼────────────┼─────────────┼───────────────────┼──────────────────┼──────────────┼────────────────┼────────────┤
 │ 4  │ rig2 │ 2 minutes  │ 2 days      │ 125.51 MH/s       │ 109.61 MH/s      │ 1            │ 0              │ Rig2       │
 └────┴──────┴────────────┴─────────────┴───────────────────┴──────────────────┴──────────────┴────────────────┴────────────┘
+```
 
 #### ethtplink tplink auth
 
