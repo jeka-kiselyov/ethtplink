@@ -134,6 +134,11 @@ module.exports = function(sequelize, DataTypes) {
 		return sequelize.db.Rig._iotClassInstance;
 	};
 
+	model.getRigsWithNoIOTDevicesAssigned = async function() {
+		let rigs = await sequelize.db.findAll({where: {assignedIOTDeviceId: ''}});
+		return rigs;
+	};
+
 	model.consoleLogAllRigs = async function() {
 		let tplink = await this.syncWithTPLink();
 

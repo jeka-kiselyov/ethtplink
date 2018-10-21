@@ -21,6 +21,11 @@ class Handler extends ETHTPLinkCommand {
 
         await db.Rig.consoleLogAllRigs();
 
+        if (rigsWithNoIOTDevicesAssigned && rigsWithNoIOTDevicesAssigned.length) {
+            this.logger.info("There are rig(s) with no IOT device assigned. Run `ethtplink rigs assign` to assign");
+        }
+        let rigsWithNoIOTDevicesAssigned = await db.Rig.getRigsWithNoIOTDevicesAssigned();
+
         this.program.exit();
     }
 };
