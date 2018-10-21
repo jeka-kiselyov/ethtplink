@@ -17,14 +17,16 @@ class Handler extends ETHTPLinkCommand {
         let isCredentialsGood = false;
         do {
             let input = await prompt.get({
-                username: {
-                    pattern: /^\S+@\S+\.\S+$/,
-                    message: 'Usually it is email address',
-                    required: true
-                },
-                password: {
-                    hidden: true,
-                    required: true
+                properties:{
+                    username: {
+                        pattern: /^\S+@\S+\.\S+$/,
+                        message: 'Usually it is email address',
+                        required: true
+                    },
+                    password: {
+                        hidden: true,
+                        required: true
+                    }
                 }
             });
 
