@@ -5,7 +5,7 @@ const path = require('path');
 const os = require("os");
 
 const workingDataPath = path.join(os.homedir(), '.ethtplink');
-const pjson = path.join(__dirname, 'package.json');
+const pjson = require(path.join(__dirname, 'package.json'));
 
 let program = new Program({
 		"name": "TP-Link HS100/HS110 Rigs Controller",
