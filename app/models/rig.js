@@ -135,7 +135,7 @@ module.exports = function(sequelize, DataTypes) {
 	};
 
 	model.getRigsWithNoIOTDevicesAssigned = async function() {
-		let rigs = await sequelize.db.findAll({where: {assignedIOTDeviceId: ''}});
+		let rigs = await sequelize.db.Rig.findAll({where: {assignedIOTDeviceId: ''}});
 		return rigs;
 	};
 
